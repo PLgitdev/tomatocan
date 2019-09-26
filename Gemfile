@@ -1,13 +1,13 @@
 source 'http://rubygems.org'
-ruby "2.6.1"
+ruby "2.5.3"
 
 gem 'listen'
 gem 'rails-controller-testing'
 
 gem 'pg'
 #gem 'sqlite3'
-gem 'pry-rails'
-gem 'figaro'
+
+
 gem 'mandrill'	
 gem 'devise'
 gem 'fog'   #, '1.6.0'
@@ -19,6 +19,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'koala'
 gem 'will_paginate-bootstrap'
+gem 'simple_calendar'
 
 gem 'pry'
 gem 'aws-sdk-s3' #aws-s3'
@@ -40,7 +41,7 @@ gem 'geocoder'
 gem 'friendly_id', '~> 5.0.0'
 #gem "paperclip", "~> 2.0"
 #gem 'rmagick'
-gem 'simple_calendar'
+
 group :test, :development do
   gem 'minitest'
   gem 'simplecov'
@@ -52,7 +53,6 @@ group :test, :development do
   gem 'apparition', '~> 0.2.0'
   gem 'capybara'
   gem 'capybara-screenshot', :group => :test
-  gem 'listen'
   gem 'rails-controller-testing'
 end
 
